@@ -43,7 +43,7 @@ $(function () {
         e.preventDefault()
         $.ajax({
             type: "POST",
-            url: baseUrl + "/api/login"
+            url: baseUrl + "/api/login",
             //将表单内容序列化成一个字符串。
             data: $(this).serialize(),
             success: (res) => {
