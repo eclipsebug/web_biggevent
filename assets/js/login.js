@@ -26,7 +26,7 @@ $(function () {
         e.preventDefault();
         $.ajax({
             type: "POST",
-            url: baseUrl + "/api/reguser",
+            url: "/api/reguser",
             data: {
                 username: $("#form_reg [name=username]").val(),
                 password: $("#form_reg [name=password]").val(),
@@ -43,7 +43,7 @@ $(function () {
         e.preventDefault()
         $.ajax({
             type: "POST",
-            url: baseUrl + "/api/login",
+            url: "/api/login",
             //将表单内容序列化成一个字符串。
             data: $(this).serialize(),
             success: (res) => {
