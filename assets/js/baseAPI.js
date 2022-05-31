@@ -12,7 +12,7 @@ $.ajaxPrefilter((option) => {
     }
     // 判断token是否过期 和token是错误
     option.complete = (res) => {
-        console.log(res);
+        // console.log(res);
         if (res.responseJSON.status === 1 && res.responseJSON.message === "身份认证失败！") {
             localStorage.removeItem("token");
             location.href = "/index.html"

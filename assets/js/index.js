@@ -9,7 +9,7 @@ function getUserInfo() {
         success: (res) => {
             if (res.status !== 0) return layer.msg("获取用户信息失败")
             layer.msg("获取用户信息成功");
-            console.log(res.data);
+            // console.log(res.data);
             // 调用renderAvatar() ,传入获取的res.data
             renderAvatar(res.data)
         }
